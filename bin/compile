@@ -10,8 +10,8 @@ VERSION="1.9.8"
 
 # Buildpack URL
 ARCHIVE_NAME=phantomjs-${VERSION}-linux-x86_64
-FILE_NAME=${ARCHIVE_NAME}.tar.bz2
-BUILDPACK_PHANTOMJS_PACKAGE=https://bitbucket.org/ariya/phantomjs/downloads/${FILE_NAME}
+FILE_NAME=${ARCHIVE_NAME}.tar
+BUILDPACK_PHANTOMJS_PACKAGE=https://dl.dropbox.com/s/frkdtjt3we1vqv4/${FILE_NAME}
 
 mkdir -p $CACHE_DIR
 if ! [ -e $CACHE_DIR/$FILE_NAME ]; then
